@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ****** HEADER STYLES ****** */
+header {
+    width: 100%;
+    height: 6rem;
+
+    background-color: #bbbbbb;
+    box-shadow: 0rem .2rem .2rem #9e9e9e ;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    border: 1px solid red;
+}
+.navigation {
+    border: 1px solid red;
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation li {
+    border: 1px solid green;
+    list-style: none;
+}
+
+
+
+/* ****** DISPLAY GRID STYLES ****** */
+#cardContainer {
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 2rem 3rem;
+    justify-items: center;
+    width: 80%;
+    height: 80%;
+}
+div {
+    border: 1px solid red;
+    justify-self: center;
+    width: 100%;
+    background-image: url(./images/placeholder.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2 {
+    border: 1px solid green;
+    text-align: center;
+}
+
