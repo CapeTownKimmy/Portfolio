@@ -1,6 +1,18 @@
-/* font-family: 'Poiret One', cursive;
-font-family: 'Ysabeau Infant', sans-serif; */
+/* FONTS */
+    /* 
+    font-family: 'Poiret One', cursive;
+    font-family: 'Ysabeau Infant', sans-serif; 
+    */
 
+/* COLOURS:*/
+    /*
+    header background: #394A59 
+    footer background: #394A59 
+    body background: #74818c
+    Font colour: white
+    */
+
+/* ****** GLOBAL STYLES ****** */
 * {
     margin: 0;
     padding: 0;
@@ -79,7 +91,7 @@ h1 a,
 
 /* ****** DISPLAY GRID STYLES ****** */
 #cardContainer {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
@@ -89,7 +101,7 @@ h1 a,
     height: 80%;
 }
 main div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-self: center;
     width: 100%;
     background-image: url(./images/placeholder.jpeg);
@@ -107,10 +119,16 @@ main div:hover {
 h2 {
     border: 1px solid green;
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
+    bottom: .5rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: 'Ysabeau Infant', sans-serif; 
+    color: #394a59;
+    font-size: 1.7rem;
+    text-align: center;
 }
+
 
 
 
