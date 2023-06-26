@@ -1,3 +1,6 @@
+/* font-family: 'Poiret One', cursive;
+font-family: 'Ysabeau Infant', sans-serif; */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,34 +12,69 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
+    background-color: #b4bbbf;
 }
 
 /* ****** HEADER STYLES ****** */
-header {
+#headerContainer {
+    background-color: #74818c;
+    box-shadow: 0rem .2rem .3rem #394a59;
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+header {
+    width: 80%;
     height: 6rem;
-
-    background-color: #bbbbbb;
-    box-shadow: 0rem .2rem .2rem #9e9e9e ;
-
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 h1 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    font-family: 'Poiret One', cursive;
+    font-size: 2rem;
+    margin: auto 0;
+}
+h1 a, 
+.navigation li a {
+    text-decoration: none;
+    color: white;
 }
 .navigation {
-    border: 1px solid red;
-    width: 15rem;
+    /* border: 1px solid red; */
+    width: 19rem;
     display: flex;
     justify-content: space-between;
+    margin-bottom: .4rem;
 }
 .navigation li {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     list-style: none;
-}
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 1.4rem;
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
 
+  /* Hover Animation */
+  .navigation li:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.28s ease-out;
+  }
+  .navigation li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 
 /* ****** DISPLAY GRID STYLES ****** */
@@ -45,7 +83,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
-    gap: 2rem 3rem;
+    gap: 4rem 3rem;
     justify-items: center;
     width: 80%;
     height: 80%;
@@ -57,10 +95,21 @@ main div {
     background-image: url(./images/placeholder.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 10px;
+    box-shadow: .3rem .3rem .5rem #394a59;
+    position: relative;
+}
+main div:hover {
+    scale: 1.04;
+    transition: scale 500ms;
+    cursor: pointer;
 }
 h2 {
     border: 1px solid green;
-    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 
@@ -69,17 +118,23 @@ h2 {
 footer {
     width: 100%;
     height: 4.5rem;
-    background-color: #bbbbbb;
+    background-color: #74818c;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 footer p {
     border: 1px solid green;
-    ali
 }
 .socialLinks {
     border: 1px solid red;
+    display: flex;
+    gap: 1rem;
+}
+.socialLinks img:hover {
+    scale: 1.04;
+    transition: scale 500ms;
+    cursor: pointer;
 }
 /* Empty div for spacing */
 footer div {
