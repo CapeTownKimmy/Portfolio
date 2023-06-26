@@ -100,7 +100,7 @@ h1 a,
     width: 80%;
     height: 80%;
 }
-main div {
+main a {
     /* border: 1px solid red; */
     justify-self: center;
     width: 100%;
@@ -111,7 +111,7 @@ main div {
     box-shadow: .3rem .3rem .5rem #394a59;
     position: relative;
 }
-main div:hover {
+main a:hover {
     scale: 1.04;
     transition: scale 500ms;
     cursor: pointer;
