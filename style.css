@@ -10,6 +10,7 @@
     footer background: #394A59 
     body background: #74818c
     Font colour: white
+    Font colour - About text: #252b30
     */
 
 /* ****** GLOBAL STYLES ****** */
@@ -88,7 +89,7 @@ h1 a,
         transform-origin: bottom left;
     }
 
-
+/* ****** INDEX PAGE BODY ****** */
 /* ****** DISPLAY GRID STYLES ****** */
 #cardContainer {
     /* border: 1px solid green; */
@@ -120,7 +121,7 @@ main a:hover {
 h2 {
     /* border: 1px solid green; */
     position: absolute;
-    bottom: 0.02rem;
+    bottom: 0.8rem;
     left: 0;
     right: 0;
     margin: auto;
@@ -129,8 +130,7 @@ h2 {
     background-color: aliceblue;
     font-size: 1.7rem;
     text-align: center;
-    box-shadow: 0px -2px 4px #394a59;
-    border-radius: 2px 2px 8px 8px;
+    box-shadow: 0px -2px 4px #394a59, 0px 3px 4px #394a59;
 }
 .one {
     background-image: url(./images/terriblTarot.jpg);
@@ -186,4 +186,33 @@ footer span {
     cursor: pointer;
 }
 
-
+/* ****** ABOUT PAGE BODY ****** */
+#textContainer {
+    /* border: 1px solid red; */
+    width: 60%;
+    height: 55.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1250px;
+}
+.textBox {
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 1.3rem; 
+    color: #252b30;
+    background-color: aliceblue;
+    box-shadow: .3rem .3rem .5rem #394a59;
+    border-radius: 10px;
+    height: 91.2%;
+    max-width: 720px;
+    padding: 2rem;
+}
+.textPortrait {
+    border: 1.3rem solid aliceblue;
+    box-shadow: .3rem .3rem .5rem #394a59;
+    pointer-events: none;
+    border-radius: 10px;
+    height: 94.5%;
+    justify-self: flex-end;
+}
