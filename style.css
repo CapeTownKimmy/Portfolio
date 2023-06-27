@@ -95,21 +95,22 @@ h1 a,
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
-    gap: 4rem 3rem;
+    gap: 3rem 3rem;
     justify-items: center;
     width: 80%;
-    height: 80%;
+    height: 75%;
 }
 main a {
     /* border: 1px solid red; */
     justify-self: center;
     width: 100%;
-    background-image: url(./images/placeholder.jpeg);
+    /* background-image: url(./images/placeholder.jpeg); */
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
     box-shadow: .3rem .3rem .5rem #394a59;
     position: relative;
+    border: 2px solid aliceblue;
 }
 main a:hover {
     scale: 1.04;
@@ -117,18 +118,29 @@ main a:hover {
     cursor: pointer;
 }
 h2 {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     position: absolute;
-    bottom: .5rem;
+    bottom: 0.02rem;
     left: 0;
     right: 0;
     margin: auto;
     font-family: 'Ysabeau Infant', sans-serif; 
     color: #394a59;
+    background-color: aliceblue;
     font-size: 1.7rem;
     text-align: center;
+    box-shadow: 0px -2px 4px #394a59;
+    border-radius: 2px 2px 8px 8px;
 }
-
+.one {
+    background-image: url(./images/terriblTarot.jpg);
+}
+.two {
+    background-image: url(./images/DragADoodle.jpg); 
+}
+.three {
+    background-image: url(./images/RockPaperScissors03.jpg);
+}
 
 
 
