@@ -26,6 +26,9 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #b4bbbf;
+    background-image: url(./images/overlayDiagonal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* ****** HEADER STYLES ****** */
@@ -101,22 +104,23 @@ h1 a,
     width: 80%;
     height: 75%;
 }
-main a {
+.card {
     /* border: 1px solid red; */
     justify-self: center;
     width: 100%;
-    /* background-image: url(./images/placeholder.jpeg); */
+    background-color: #b4bbbf;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
     box-shadow: .3rem .3rem .5rem #394a59;
     position: relative;
     border: 2px solid aliceblue;
+    
 }
-main a:hover {
-    scale: 1.04;
-    transition: scale 500ms;
+.card:hover {
     cursor: pointer;
+    transform: perspective(1px) scale(1.04);
+    transition: transform 500ms; 
 }
 .cardName {
     /* border: 1px solid green; */
@@ -187,6 +191,8 @@ footer span {
     filter: invert(25%) sepia(25%) saturate(575%) hue-rotate(166deg) brightness(93%) contrast(85%);
 }
 
+
+
 /* ****** ABOUT PAGE BODY ****** */
 #textContainer {
     /* border: 1px solid red; */
@@ -219,19 +225,24 @@ footer span {
 }
 
 
+
 /* ****** CONTACT PAGE BODY ****** */
 
-#overlay{
+/* #overlay{
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 6rem;
+    bottom: 4.5rem;
     left: 0;
     right: 0;
-    background-color: #394a59b3;
-}
+    background-image: url(./images/overlay.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
 #popUpContainer {
     position: absolute;
     top: 20%;
+    left: 50%;
+    transform: translate(-50%);
     width: 30rem;
     height: 30rem;
     background-color: #74818c;
@@ -243,9 +254,6 @@ footer span {
     justify-content: space-evenly;
     align-items: center;
     gap: 3rem;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 800ms;
 }
 #closeBtn {
     /* border: 1px solid red; */
@@ -281,7 +289,7 @@ footer span {
     width: 55%;
 }
 .contactLinks a {
-    /* border: 1px solid white; */
+    border: none;
     font-family: 'Ysabeau Infant', sans-serif;
     font-size: 1.3rem;
     color: white;
@@ -313,4 +321,7 @@ footer span {
     box-shadow: 0px -2px 4px #DFBC9F, 0px 3px 4px #DFBC9F;
     border-radius: 10px;
     filter: invert(100%);
+}
+#contactPageCenter {
+    margin: 0 auto;
 }
