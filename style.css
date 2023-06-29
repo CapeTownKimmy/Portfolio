@@ -105,7 +105,6 @@ h1 a,
     height: 75%;
 }
 .card {
-    /* border: 1px solid red; */
     justify-self: center;
     width: 100%;
     background-color: #b4bbbf;
@@ -115,12 +114,31 @@ h1 a,
     box-shadow: .3rem .3rem .5rem #394a59;
     position: relative;
     border: 2px solid aliceblue;
-    
 }
-.card:hover {
-    cursor: pointer;
-    transform: perspective(1px) scale(1.04);
-    transition: transform 500ms; 
+
+.overlay {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    background-color: #949fa6;
+    border-radius: 10px;
+    box-shadow: .3rem .3rem .5rem #394a59;
+    position: absolute;
+    top: -1.6px;
+    left: -1.6px;
+    border: 2px solid #b4bbbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .5s ease;
+}
+.overlay p {
+    border: 1px solid red;
+    padding: 1.3rem 1rem;
+}
+.card:hover .overlay {
+    opacity: 1;
 }
 .cardName {
     /* border: 1px solid green; */
@@ -325,3 +343,6 @@ footer span {
 #contactPageCenter {
     margin: 0 auto;
 }
+
+
+
