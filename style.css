@@ -17,6 +17,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     display: flex;
@@ -25,14 +26,19 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
+    width: auto;
     background-color: #b4bbbf;
     background-image: url(./images/overlayDiagonal.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* ****** HEADER STYLES ****** */
+
+
+
+/* ***-------*** HEADER STYLES ***-------*** */
 #headerContainer {
+    border: 1px solid purple;
     background-color: #74818c;
     box-shadow: 0rem .2rem .3rem #394a59;
     width: 100%;
@@ -40,6 +46,7 @@ body {
     justify-content: center;
 }
 header {
+    border: 1px solid GREEN;
     width: 80%;
     height: 6rem;
     display: flex;
@@ -47,6 +54,7 @@ header {
     align-items: flex-end;
 }
 h1 {
+    border: 1px solid red;
     font-family: 'Poiret One', cursive;
     font-size: 2rem;
     margin: auto 0;
@@ -56,16 +64,19 @@ h1 {
 }
 h1 a, 
 .navigation li a {
+    border: 1px solid red;
     text-decoration: none;
     color: white;
 }
 .navigation {
+    border: 1px solid red;
     width: 19rem;
     display: flex;
     justify-content: space-between;
     margin-bottom: .4rem;
 }
 .navigation li {
+    border: 1px solid red;
     list-style: none;
     font-family: 'Ysabeau Infant', sans-serif;
     font-size: 1.4rem;
@@ -95,9 +106,54 @@ h1 a,
         transform-origin: bottom left;
     }
 
-/* ****** INDEX PAGE BODY ****** */
+    /* &&&&&&&&*******MEDIA QUERIES - HEADER********&&&&&&&& */
+
+@media only screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation {
+        margin-bottom: .2rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+    header {
+        height: 7rem;
+    }
+    .navigation li {
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .navigation {
+        justify-content: center;
+        gap: 2.7rem;
+        width: 17rem;
+    }
+}
+@media only screen and (max-width: 330px) {
+    .navigation {
+        justify-content: center;
+        gap: 2.3rem;
+        width: 15rem;
+    }
+}
+@media only screen and (max-width: 270px) {
+    .navigation {
+        gap: 1.5rem;
+        width: 14rem;
+    }
+}
+
+
+/* ***-------*** INDEX PAGE BODY ***-------*** */
 /* ****** DISPLAY GRID STYLES ****** */
 #cardContainer {
+    border: 1px solid red;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
@@ -107,6 +163,7 @@ h1 a,
     height: 75%;
 }
 .card {
+    border: 1px solid red;
     justify-self: center;
     width: 100%;
     background-color: #b4bbbf;
@@ -123,11 +180,11 @@ h1 a,
     scale: 0.99;
 }
 .overlay {
-    width: 100%;
-    height: 100%;
+    width: 101%;
+    height: 102%;
     background-color: #949fa6;
     border-radius: 10px;
-    box-shadow: .3rem .3rem .5rem #394a59;
+    /* box-shadow: .3rem .3rem .5rem #394a59; */
     position: absolute;
     top: -1.6px;
     left: -1.6px;
@@ -135,10 +192,11 @@ h1 a,
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
+    opacity: 0;            
     transition: .5s ease;
 }
 .overlay p {
+    border: 1px solid red;
     padding: 1.3rem 1.5rem;
     color: white;
     font-family: 'Ysabeau Infant', sans-serif;
@@ -181,15 +239,66 @@ h1 a,
 }
 
 
+/* &&&&&&&&*******MEDIA QUERIES - INDEX PAGE BODY********&&&&&&&& */
 
-/* ****** FOOTER STYLES ****** */
+@media only screen and (max-width: 1240px) {
+    .overlay p {
+        line-height: 1.7rem;
+        font-size: 1.2rem;
+    }
+    .overlay {
+        /* height: 107%; */
+        align-items: flex-start;
+        overflow: auto;
+    }
+    .overlay::-webkit-scrollbar {
+        width: 12px;               /* width of the entire scrollbar */
+      }
+      
+      .overlay::-webkit-scrollbar-track {
+        background: #949fa6;        /* color of the tracking area */
+        border-radius: 20px 20px 20px 0;
+      }
+      
+      .overlay::-webkit-scrollbar-thumb {
+        background-color: #394a59;    /* color of the scroll thumb */
+        border-radius: 20px;       /* roundness of the scroll thumb */
+        border: 3px solid #949fa6;  /* creates padding around scroll thumb */
+      }
+}
+@media only screen and (max-width: 1450px) {
+    .overlay p {
+        line-height: 1.8rem;
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #cardContainer {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(5, auto);
+        gap: 3rem 3rem;
+    }
+}
+@media only screen and (max-width: 430px) {
+    #cardContainer {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(9, auto);
+        gap: 2rem 2rem;
+    }
+}
+
+
+
+/* ***-------*** FOOTER STYLES ***-------*** */
 #footerContainer {
+    border: 1px solid blue;
     width: 100%;
     background-color: #74818c;
     display: flex;
     justify-content: center;
 }
 footer {
+    border: 1px solid purple;
     width: 80%;
     height: 4.5rem;
     display: flex;
@@ -197,6 +306,7 @@ footer {
     justify-content: space-between;
 }
 footer p {
+    border: 1px solid red;
     font-family: 'Ysabeau Infant', sans-serif;
     color: white;
     -webkit-user-select: none;
@@ -208,6 +318,7 @@ footer span {
     font-weight: 550;
 }
 .socialLinks {
+    border: 1px solid red;
     display: flex;
     gap: 2rem;
 }
@@ -226,10 +337,29 @@ footer span {
 }
 
 
+/* &&&&&&&&*******MEDIA QUERIES - INDEX PAGE BODY********&&&&&&&& */
+@media only screen and (max-width: 550px) {
+    #footerContainer {
+        height: 5.5rem;
+    }
+    footer {
+        flex-direction: column-reverse;
+        height: 100%;
+        justify-content: center;
+        gap: .5rem;
+    }
+}
+@media only screen and (max-width: 350px) {
+    footer p {
+        font-size: .8rem;
+    }
+}
 
-/* ****** ABOUT PAGE BODY ****** */
+
+
+/* ***-------*** ABOUT PAGE BODY ***-------*** */
 #textContainer {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 80%;
     height: 55.5%;
     display: flex;
@@ -239,6 +369,7 @@ footer span {
     max-width: 1250px;
 }
 .textBox {
+    border: 1px solid red;
     font-family: 'Ysabeau Infant', sans-serif;
     font-size: 1.3rem; 
     line-height: 2.6rem;
@@ -252,8 +383,12 @@ footer span {
     -webkit-user-select: none; 
     -ms-user-select: none; 
     user-select: none; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .textBox a {
+    border: 1px solid red;
     text-decoration: none;
     color: #252b30;
     font-weight: 500;
@@ -278,6 +413,7 @@ footer span {
   }
 
 .textPortrait {
+    border: 1px solid red;
     border: 1.3rem solid aliceblue;
     box-shadow: .3rem .3rem .5rem #394a59;
     pointer-events: none;
@@ -289,12 +425,13 @@ footer span {
     user-select: none; 
 }
 h3 {
+    border: 1px solid red;
     font-family: 'Ysabeau Infant', sans-serif;
     font-size: 1.3rem; 
     line-height: 2.6rem;
 }
 .skillsList li {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     background: url('./images/tickMedium.png') no-repeat left center;
     background-size: 20px;
     padding: 5px 10px 5px 40px;
@@ -304,9 +441,10 @@ h3 {
 }
 
 
-/* ****** CONTACT PAGE BODY ****** */
+/* ***-------*** CONTACT PAGE BODY ***-------*** */
 
 #popUpContainer {
+    border: 1px solid red;
     position: absolute;
     top: 20%;
     left: 50%;
@@ -337,6 +475,7 @@ h3 {
     color: aliceblue;
 }
 .contactHeading {
+    border: 1px solid red;
     font-family: 'Poiret One', cursive;
     letter-spacing: 1.5px;
     font-size: 1.9rem;
@@ -376,6 +515,7 @@ h3 {
     filter: invert(94%) sepia(5%) saturate(5356%) hue-rotate(304deg) brightness(111%) contrast(75%);
 }
 .socialLinksPopUp {
+    border: 1px solid red;
     filter: invert(100%);
     display: flex;
     justify-content: space-between;
@@ -395,6 +535,4 @@ h3 {
 #contactPageCenter {
     margin: 0 auto;
 }
-
-
 
