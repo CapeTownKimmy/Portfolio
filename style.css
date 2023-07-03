@@ -38,7 +38,6 @@ body {
 
 /* ***-------*** HEADER STYLES ***-------*** */
 #headerContainer {
-    border: 1px solid purple;
     background-color: #74818c;
     box-shadow: 0rem .2rem .3rem #394a59;
     width: 100%;
@@ -46,7 +45,6 @@ body {
     justify-content: center;
 }
 header {
-    border: 1px solid GREEN;
     width: 80%;
     height: 6rem;
     display: flex;
@@ -54,7 +52,6 @@ header {
     align-items: flex-end;
 }
 h1 {
-    border: 1px solid red;
     font-family: 'Poiret One', cursive;
     font-size: 2rem;
     margin: auto 0;
@@ -64,19 +61,16 @@ h1 {
 }
 h1 a, 
 .navigation li a {
-    border: 1px solid red;
     text-decoration: none;
     color: white;
 }
 .navigation {
-    border: 1px solid red;
     width: 19rem;
     display: flex;
     justify-content: space-between;
     margin-bottom: .4rem;
 }
 .navigation li {
-    border: 1px solid red;
     list-style: none;
     font-family: 'Ysabeau Infant', sans-serif;
     font-size: 1.4rem;
@@ -153,7 +147,6 @@ h1 a,
 /* ***-------*** INDEX PAGE BODY ***-------*** */
 /* ****** DISPLAY GRID STYLES ****** */
 #cardContainer {
-    border: 1px solid red;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
@@ -163,7 +156,6 @@ h1 a,
     height: 75%;
 }
 .card {
-    border: 1px solid red;
     justify-self: center;
     width: 100%;
     background-color: #b4bbbf;
@@ -184,7 +176,6 @@ h1 a,
     height: 102%;
     background-color: #949fa6;
     border-radius: 10px;
-    /* box-shadow: .3rem .3rem .5rem #394a59; */
     position: absolute;
     top: -1.6px;
     left: -1.6px;
@@ -196,7 +187,6 @@ h1 a,
     transition: .5s ease;
 }
 .overlay p {
-    border: 1px solid red;
     padding: 1.3rem 1.5rem;
     color: white;
     font-family: 'Ysabeau Infant', sans-serif;
@@ -247,23 +237,22 @@ h1 a,
         font-size: 1.2rem;
     }
     .overlay {
-        /* height: 107%; */
         align-items: flex-start;
         overflow: auto;
     }
     .overlay::-webkit-scrollbar {
-        width: 12px;               /* width of the entire scrollbar */
+        width: 12px;             
       }
       
       .overlay::-webkit-scrollbar-track {
-        background: #949fa6;        /* color of the tracking area */
+        background: #949fa6;      
         border-radius: 20px 20px 20px 0;
       }
       
       .overlay::-webkit-scrollbar-thumb {
-        background-color: #394a59;    /* color of the scroll thumb */
-        border-radius: 20px;       /* roundness of the scroll thumb */
-        border: 3px solid #949fa6;  /* creates padding around scroll thumb */
+        background-color: #394a59;    
+        border-radius: 20px;      
+        border: 3px solid #949fa6;  
       }
 }
 @media only screen and (max-width: 1450px) {
@@ -286,19 +275,21 @@ h1 a,
         gap: 2rem 2rem;
     }
 }
-
+@media only screen and (max-width: 302px) {
+    .cardName {
+        display: none;
+    }
+}
 
 
 /* ***-------*** FOOTER STYLES ***-------*** */
 #footerContainer {
-    border: 1px solid blue;
     width: 100%;
     background-color: #74818c;
     display: flex;
     justify-content: center;
 }
 footer {
-    border: 1px solid purple;
     width: 80%;
     height: 4.5rem;
     display: flex;
@@ -306,7 +297,6 @@ footer {
     justify-content: space-between;
 }
 footer p {
-    border: 1px solid red;
     font-family: 'Ysabeau Infant', sans-serif;
     color: white;
     -webkit-user-select: none;
@@ -318,7 +308,6 @@ footer span {
     font-weight: 550;
 }
 .socialLinks {
-    border: 1px solid red;
     display: flex;
     gap: 2rem;
 }
@@ -337,7 +326,7 @@ footer span {
 }
 
 
-/* &&&&&&&&*******MEDIA QUERIES - INDEX PAGE BODY********&&&&&&&& */
+/* &&&&&&&&*******MEDIA QUERIES - FOOTER********&&&&&&&& */
 @media only screen and (max-width: 550px) {
     #footerContainer {
         height: 5.5rem;
@@ -359,7 +348,6 @@ footer span {
 
 /* ***-------*** ABOUT PAGE BODY ***-------*** */
 #textContainer {
-    border: 1px solid red;
     width: 80%;
     height: 55.5%;
     display: flex;
@@ -369,7 +357,6 @@ footer span {
     max-width: 1250px;
 }
 .textBox {
-    border: 1px solid red;
     font-family: 'Ysabeau Infant', sans-serif;
     font-size: 1.3rem; 
     line-height: 2.6rem;
@@ -377,9 +364,9 @@ footer span {
     background-color: aliceblue;
     box-shadow: .3rem .3rem .5rem #394a59;
     border-radius: 10px;
-    height: 91.2%;
+    height: 100%;
     max-width: 500px;
-    padding: 2rem;
+    padding: 1.5rem;
     -webkit-user-select: none; 
     -ms-user-select: none; 
     user-select: none; 
@@ -388,7 +375,6 @@ footer span {
     justify-content: space-between;
 }
 .textBox a {
-    border: 1px solid red;
     text-decoration: none;
     color: #252b30;
     font-weight: 500;
@@ -413,25 +399,25 @@ footer span {
   }
 
 .textPortrait {
-    border: 1px solid red;
     border: 1.3rem solid aliceblue;
     box-shadow: .3rem .3rem .5rem #394a59;
     pointer-events: none;
     border-radius: 10px;
-    height: 94.5%;
+    height: 100%;
     justify-self: flex-end;
     -webkit-user-select: none; 
     -ms-user-select: none; 
     user-select: none; 
 }
 h3 {
-    border: 1px solid red;
     font-family: 'Ysabeau Infant', sans-serif;
     font-size: 1.3rem; 
     line-height: 2.6rem;
 }
+.skillsListContainer {
+    margin: 1rem 0;
+}
 .skillsList li {
-    border: 1px solid red;
     background: url('./images/tickMedium.png') no-repeat left center;
     background-size: 20px;
     padding: 5px 10px 5px 40px;
@@ -440,11 +426,145 @@ h3 {
     vertical-align: middle;
 }
 
+/* &&&&&&&&*******MEDIA QUERIES - ABOUT********&&&&&&&& */
+@media only screen and (max-width: 1260px) {
+    .textPortrait {
+        height: 90%;
+        align-self: flex-start;
+    }
+    .textBox {
+        justify-content: flex-start;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .textPortrait {
+        height: 80%;
+        border: 1.1rem solid aliceblue;
+    }
+    #textContainer {
+        height: 60%;
+    }
+}
+@media only screen and (max-width: 1140px) {
+    .textPortrait {
+        height: 70%;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .textPortrait {
+        height: 60%;
+    }
+}
+@media only screen and (max-width: 1020px) {
+    .textPortrait {
+        height: 50%;
+        border: .9rem solid aliceblue;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .textPortrait {
+        height: 40%;
+        border: .8rem solid aliceblue;
+    }
+}
+@media only screen and (max-width: 885px) {
+    #textContainer {
+        height: 65%;
+    }
+    .textPortrait {
+        height: 35%;
+    }
+}
+@media only screen and (max-width: 810px) {
+    #textContainer {
+        height: 70%;
+    }
+    .textPortrait {
+        height: 30%;
+    }
+}
+@media only screen and (max-width: 810px) {
+    #textContainer {
+        height: 75%;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .textPortrait {
+        height: 25%;
+    }
+    #textContainer {
+        gap: 2rem;
+    }
+    .textBox {
+        font-size: 1.3rem; 
+        line-height: 2.4rem;
+    }
+    h3 {
+        font-size: 1.2rem; 
+        line-height: 2.4rem;
+    }
+}
+@media only screen and (max-width: 685px) {
+    .textBox {
+        font-size: 1.2rem; 
+    }
+}
+@media only screen and (max-width: 660px) {
+    .textPortrait {
+        height: 20%;
+        border: .6rem solid aliceblue;
+    }
+}
+@media only screen and (max-width: 620px) {
+    .textPortrait {
+        display: none;
+    }
+    #textContainer {
+        height: 60%;
+    }
+}
+@media only screen and (max-width: 530px) {
+    #textContainer {
+        height: 66%;
+    }
+}
+@media only screen and (max-width: 460px) {
+    #textContainer {
+        height: 71%;
+    }
+    .textBox {
+        padding: 1.2rem;
+    }
+}
+@media only screen and (max-width: 408px) {
+    #textContainer {
+        height: 76%;
+    }
+}
+@media only screen and (max-width: 470px){
+    .textBox {
+        overflow: auto;
+    }
+    .textBox::-webkit-scrollbar {
+        width: 12px;              
+    }
+    .textBox::-webkit-scrollbar-track {
+        background: aliceblue;        
+        border-radius: 20px 20px 20px 0;
+    }
+    .textBox::-webkit-scrollbar-thumb {
+        background-color: #74818c;    
+        border-radius: 20px;      
+        border: 3px solid aliceblue;  
+    }
+}
+
+
+
 
 /* ***-------*** CONTACT PAGE BODY ***-------*** */
 
 #popUpContainer {
-    border: 1px solid red;
     position: absolute;
     top: 20%;
     left: 50%;
@@ -461,21 +581,7 @@ h3 {
     align-items: center;
     gap: 3rem;
 }
-#closeBtn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: .2rem .7rem;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #252b30;
-    font-weight: 700;
-}
-#closeBtn:hover {
-    color: aliceblue;
-}
 .contactHeading {
-    border: 1px solid red;
     font-family: 'Poiret One', cursive;
     letter-spacing: 1.5px;
     font-size: 1.9rem;
@@ -515,7 +621,6 @@ h3 {
     filter: invert(94%) sepia(5%) saturate(5356%) hue-rotate(304deg) brightness(111%) contrast(75%);
 }
 .socialLinksPopUp {
-    border: 1px solid red;
     filter: invert(100%);
     display: flex;
     justify-content: space-between;
@@ -536,3 +641,49 @@ h3 {
     margin: 0 auto;
 }
 
+
+/* &&&&&&&&*******MEDIA QUERIES - CONTACT********&&&&&&&& */
+@media only screen and (max-width: 560px) {
+    #popUpContainer {
+        width: 25rem;
+    }
+}
+@media only screen and (max-width: 450px) {
+    #popUpContainer {
+        width: 20rem;
+    }
+    .contactLinks {
+        width: 65%;
+    }
+    .socialLinksPopUp {
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    #popUpContainer {
+        width: 15rem;
+    }
+    .contactLinks {
+        width: 100%;
+    }
+    .socialLinksPopUp {
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+@media only screen and (max-width: 250px) {
+    #popUpContainer {
+        width: 12rem;
+    }
+    .contactLinks a{
+        gap: .5rem;
+    }
+    .socialLinksPopUp {
+        width: 100%;
+        padding: 0 .5rem;
+        justify-content: space-around;
+    }
+    .socialLinksPopUp img {
+        width: 40px;
+    }
+}
