@@ -615,6 +615,7 @@ h3 {
     -webkit-user-select: none; 
     -ms-user-select: none; 
     user-select: none; 
+    height: 51px;
 }
 
 .contactLinks img {
