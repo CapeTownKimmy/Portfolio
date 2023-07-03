@@ -373,6 +373,19 @@ footer span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: auto;
+}
+.textBox::-webkit-scrollbar {
+    width: 12px;              
+}
+.textBox::-webkit-scrollbar-track {
+    background: aliceblue;        
+    border-radius: 20px 20px 20px 0;
+}
+.textBox::-webkit-scrollbar-thumb {
+    background-color: #74818c;    
+    border-radius: 20px;      
+    border: 3px solid aliceblue;  
 }
 .textBox a {
     text-decoration: none;
