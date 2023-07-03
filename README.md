@@ -12,7 +12,7 @@ For this *Codecademy* project, I built a personal portfolio site where I can sha
 
 ---
 
-### Have a look at my [Portfolio]()!
+### Have a look at my [Portfolio](capetownkimmy.github.io/Portfolio/)!
 
 ![Home Page](./images/hoverLoop.gif)
 
