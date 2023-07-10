@@ -218,6 +218,9 @@ h1 a,
 .italicText {
     font-style: italic;
 }
+
+
+/* &&&&&&&& !!!!!ADD NEW IMAGES HERE!!!!! &&&&&&&& */
 .one {
     background-image: url(./images/terriblTarot.jpg);
 }
@@ -226,6 +229,10 @@ h1 a,
 }
 .three {
     background-image: url(./images/RockPaperScissors03.jpg);
+}
+.four {
+    background-image: url(./images/calculations.png);
+    background-position: center;
 }
 
 
